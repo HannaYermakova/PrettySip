@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">PrettySip</string>
+    <string name="continue_txt">Продолжить</string>
+    <string name="network_is_not_available">Интернет-соединение отсутствует</string>
+    <string name="qr_instruction">В документации пользователя вы найдете QR-код. Наведите камеру телефона на него.</string>
+    <string name="qr_instruction1">Если первый способ регистрации не сработал, используйте ручной способ ввода.</string>
+    <string name="give_reboot_perm">Для корректной работы приложения после перезагрузки устройства включите "Автозапуск"</string>
+    <string name="turn_off_battery_saver">Для получения звонков в фоне отключите "Контроль активности"</string>
+    <string name="sms_instruction">Смс с кодом отправлено на ваш номер телефона</string>
+    <string name="ok">OK</string>
+    <string name="accept_user_args1">Нажимая кнопку \"Продолжить\" вы подтверждаете, что ознакомилисть и согласны с </string>
+    <string name="accept_user_args">условиями политики конфиденциальности</string>
+    <string name="manually_enter">Ручной ввод кода авторизации</string>
+    <string name="incoming_call">Вызов</string>
+    <string name="welcome">Добро пожаловать в </string>
+    <string name="enter_manually">Вручную</string>
+    <string name="enter_code_instruction">Введите код вручную</string>
+    <string name="enter_sms_code_instruction">Введите код\nподтверждения</string>
+    <string name="sms_code_repeat">Отправить код повторно</string>
+    <string name="enter_phone_number">Введите номер телефона </string>
+    <string name="invalid_phone_number">Проверьте вводимый вами номер</string>
+    <string name="limit_phone_number">Исчерпан лимит попыток входа. Попробуйте через час</string>
+    <string name="invalid_code">Неверный код, попробуйте ещё раз</string>
+    <string name="accepting_calls">Получать вызовы</string>
+    <string name="unique_code">Цифровой код доступа</string>
+    <string name="no_community_info">Нет информации о товариществе собственников</string>
+    <string name="call_ia_finished">Вызов завершен</string>
+    <string name="call_accept">Ответить</string>
+    <string name="call_hung_up">Отклонить</string>
+    <string name="call_cancel">Завершить</string>
+    <string name="call_video">Видео</string>
+    <string name="call_open">Открыть</string>
+    <string name="call_unmute">Говорить</string>
+
+    <string name="error">Ошибка</string>
+    <string name="support_message">Техническая поддержка осуществляется по номеру:</string>
+    <string name="support_phone">+375 29 123 45 67</string>
+    <string name="no_server_connection">Ошибка подключения к серверу</string>
+</resources>

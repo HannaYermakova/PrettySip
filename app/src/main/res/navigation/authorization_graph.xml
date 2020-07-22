@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="by.aermakova.prettysip.ui.activity.auth.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_qrScanFragment"
+            app:destination="@id/qrScanFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_enterCodeFragment"
+            app:destination="@id/enterCodeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/qrScanFragment"
+        android:name="by.aermakova.prettysip.ui.activity.auth.QRScannerFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_qr_scanner" >
+        <action
+            android:id="@+id/action_qrScanFragment_to_enterCodeFragment"
+            app:destination="@id/enterCodeFragment" />
+        <action
+            android:id="@+id/action_qrScanFragment_to_enterPhoneNumberFragment"
+            app:destination="@id/enterPhoneNumberFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/enterCodeFragment"
+        android:name="by.aermakova.prettysip.ui.activity.auth.EnterCodeFragment"
+        android:label="fragment_enter_code_manually"
+        tools:layout="@layout/fragment_enter_code_manually" >
+        <action
+            android:id="@+id/action_enterCodeFragment_to_enterPhoneNumberFragment"
+            app:destination="@id/enterPhoneNumberFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/enterPhoneNumberFragment"
+        android:name="by.aermakova.prettysip.ui.activity.auth.EnterPhoneNumberFragment"
+        android:label="fragment_enter_phone_number"
+        tools:layout="@layout/fragment_enter_phone_number" >
+        <action
+            android:id="@+id/action_enterPhoneNumberFragment_to_enterSMSCodeFragment"
+            app:destination="@id/enterSMSCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/enterSMSCodeFragment"
+        android:name="by.aermakova.prettysip.ui.activity.auth.EnterSMSCodeFragment"
+        android:label="fragment_enter_sms_code"
+        tools:layout="@layout/fragment_enter_sms_code" />
+</navigation>

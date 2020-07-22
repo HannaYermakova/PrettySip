@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.linphone:linphone-sdk-android-debug:4.3.4-pre.11+0ab7969@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2687e2ce309b426a4abe9b2bc79dcdf6/jetified-linphone-sdk-android-debug-4.3.4-pre.11+0ab7969/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2687e2ce309b426a4abe9b2bc79dcdf6/jetified-linphone-sdk-android-debug-4.3.4-pre.11+0ab7969/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.linphone/linphone-sdk-android-debug/4.3.4-pre.11+0ab7969/ed0d7fe5c2868b6dd676c8d361c2955d2d0c4057/linphone-sdk-android-debug-4.3.4-pre.11+0ab7969-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="200dp">
+
+        <by.aermakova.prettysip.ui.custom.CustomScannerView
+            android:id="@+id/camera_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/invalid_qr_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_reg"
+            android:paddingBottom="40dp"
+            android:text="@string/invalid_code"
+            android:textAlignment="textStart"
+            android:textColor="@color/red_light"
+            android:textSize="14sp"
+            android:visibility="invisible"
+             />
+
+        <Button
+            android:id="@+id/enter_manually"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_custom_short"
+            android:fontFamily="@font/raleway"
+            android:text="@string/enter_manually"
+            android:textAllCaps="false"
+            android:textColor="@color/change_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/raleway_reg"
+            android:paddingBottom="40dp"
+            android:text="@string/manually_enter"
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/overlay_instruction"
+        layout="@layout/layout_instruction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+</RelativeLayout>

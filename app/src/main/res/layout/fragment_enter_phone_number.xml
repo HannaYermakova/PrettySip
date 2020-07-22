@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="52dp"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/enter_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/raleway"
+            android:text="@string/enter_phone_number"
+            android:textColor="@color/colorAccent"
+            android:textSize="36sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enter_txt"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            >
+
+            <Spinner
+                android:id="@+id/enter_prefix_phonenumber"
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                />
+
+            <EditText
+                android:id="@+id/enter_phonenumber"
+                android:background="@drawable/btn_long_disable"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textColor="@color/colorAccent"
+                android:textAlignment="center"
+                android:fontFamily="@font/raleway"
+                android:textSize="18sp"
+                tools:ignore="LabelFor,RtlCompat" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                 />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/invalid_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_id"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/raleway_reg"
+            android:text="@string/invalid_phone_number"
+            android:textAlignment="textStart"
+            android:textColor="@color/light_gray"
+            android:textSize="14sp"
+            android:visibility="invisible"/>
+
+        <ProgressBar
+            android:id="@+id/progress_circular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/enter_phone_btn"
+            android:layout_marginBottom="30dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/enter_phone_btn"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="23dp"
+            android:background="@drawable/btn_custom_rect"
+            android:text="@string/continue_txt"
+            android:textAllCaps="false"
+            android:textColor="@color/change_color"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</RelativeLayout>

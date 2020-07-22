@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/incomingCallFragment">
+
+    <fragment
+        android:id="@+id/incomingCallFragment"
+        android:name="by.aermakova.prettysip.ui.activity.linphone.IncomingCallFragment"
+        android:label="activity_incoming_call"
+        tools:layout="@layout/fragment_audio_call" >
+        <action
+            android:id="@+id/action_incomingCallFragment_to_videoCallFragment"
+            app:destination="@id/videoCallFragment" />
+        <action
+            android:id="@+id/action_incomingCallFragment_to_callEndFragment"
+            app:destination="@id/callEndFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoCallFragment"
+        android:name="by.aermakova.prettysip.ui.activity.linphone.VideoCallFragment"
+        android:label="activity_video"
+        tools:layout="@layout/fragment_video_call" >
+        <action
+            android:id="@+id/action_videoCallFragment_to_callEndFragment"
+            app:destination="@id/callEndFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/callEndFragment"
+        android:name="by.aermakova.prettysip.ui.activity.linphone.CallEndFragment"
+        android:label="fragment_call_end"
+        tools:layout="@layout/fragment_call_end" />
+</navigation>
